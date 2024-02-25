@@ -1,0 +1,48 @@
+.search-box {
+
+  &__group {
+    .font-icon-search {
+      top: -.2rem;
+    }
+  }
+
+  &__filter-trigger {
+    top: -.2rem;
+  }
+
+  &__cancel.btn[class*='font-icon-'] {
+    top: -.6rem;
+    width: initial;
+    height: 5.6rem;
+    border-radius: initial;
+
+    &::before {
+      margin-top: .5rem;
+    }
+  }
+
+  &__tags {
+    margin: .8rem 0 1.2rem;
+
+    .tag-component {
+      padding-left: 3.5rem;
+    }
+  }
+
+  // This is for the `[Enter ↵]` hint.
+  &__enter {
+    padding: .2rem 0 0 1rem;
+    margin-top: 1rem;
+  }
+
+  &__content-field {
+    border-radius: initial;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    &--left-border {
+      border-left: none;
+    }
+  }
+
+}

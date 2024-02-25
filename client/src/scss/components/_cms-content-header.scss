@@ -1,0 +1,98 @@
+/* stylelint-disable declaration-no-important */
+.cms-content-header {
+  background-color: $color-white;
+  padding: 0 2rem;
+  min-height: 6rem;
+  align-items: center;
+
+  &-info {
+    .toolbar__back-button {
+      background-color: $color-blue-200;
+      border-radius: 50%;
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-right: 1rem;
+      padding: 0;
+
+      &::before {
+        display: none;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .toolbar__back-button-icon {
+      width: 0.7rem;
+      height: 1.1rem;
+      margin: 0 auto;
+    }
+
+    .cms-panel-link.crumb {
+      color: $color-blue-bright;
+      font-size: 1.1rem;
+      line-height: 1.1;
+      padding: 0;
+
+      &:hover,
+      &:focus {
+        color: $color-blue-bright;
+      }
+    }
+
+    .sep {
+      color: $color-blue-bright;
+    }
+
+    .cms-panel-link.crumb.last {
+      color: $color-black;
+      font-size: 1.6rem;
+      line-height: 1.2;
+    }
+
+    .section-label a {
+      color: $color-blue-bright;
+
+      &:hover {
+        color: $color-blue-bright;
+      }
+    }
+  }
+
+  &-tabs {
+    padding: 0;
+    min-height: auto;
+
+    .cms-panel-link,
+    .nav-link,
+    .ui-tabs-anchor {
+      font-size: 1.4rem;
+      line-height: 1.2;
+      padding: 0 0 1.7rem !important;
+      border-bottom: 0.3rem solid transparent !important;
+
+      &:hover {
+        border-bottom: 0.3rem solid $color-black !important;
+      }
+    }
+
+    .cms-panel-link.active,
+    .nav-link.active {
+      color: $color-black;
+      border-bottom: 0.3rem solid $color-black !important;
+      font-weight: $font-weight-semibold;
+    }
+
+    .nav-tabs .nav-item +.nav-item,
+    .ui-tabs-nav .ui-tab + .ui-tab {
+      margin-left: 2.3rem;
+    }
+  }
+
+  .ui-tabs-nav {
+    margin-top: 2.1rem;
+  }
+}
+
+/* stylelint-enable declaration-no-important */

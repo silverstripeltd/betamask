@@ -1,0 +1,111 @@
+/* stylelint-disable */
+.form-group {
+  display: block;
+  margin: 0 !important;
+  padding: 2.5rem 0 !important;
+  border-bottom: 0.1rem solid $color-grey-400;
+
+  &:first-child {
+    padding-top: 0 !important;
+  }
+
+  &::after {
+    display: none;
+  }
+
+  .form__field-label {
+    font-weight: $font-weight-medium;
+    margin: 0 0 .8rem !important;
+    padding: 0 !important;
+  }
+
+  .form__field-holder {
+    padding: 0 !important;
+    margin: 0 !important;
+
+    input {
+      border-radius: 0.4rem;
+      padding: 0.85rem 1.5rem;
+      height: auto;
+
+      &:focus,
+      &:focus-visible {
+        border-color: $color-blue-bright;
+      }
+    }
+
+    .URL-link {
+      color: $color-blue-bright;
+      padding-top: 0;
+
+      &:hover {
+        color: $color-blue-bright;
+      }
+    }
+
+    .preview-holder {
+      display: flex;
+      align-items: center;
+    }
+
+    .edit {
+      margin-left: 2rem;
+    }
+
+    .input-group-prepend, .btn.input-group-append {
+      display: inline-block;
+    }
+  }
+
+  .form-check-label {
+    margin-left: 0.3rem;
+  }
+
+  .form-check-input {
+    margin-top: 0.4rem;
+    margin-left: -1.8rem;
+  }
+}
+
+/**
+  TextField specific styles
+ */
+.form-group.text {
+  .form__field-holder {
+    max-width: 42rem;
+  }
+}
+
+.form-group.urlsegment {
+  .form__field-holder {
+    max-width: 100%;
+  }
+}
+
+.field.CompositeField.fieldgroup--fill-width.form-group--no-label {
+  .form__field-holder {
+    margin-top: 0 !important;
+  }
+
+  .field-group-component {
+    > .form-group {
+      padding-top: 0 !important;
+      flex: 1 1 50%;
+      min-width: 50%;
+      padding-right: 1rem !important;
+      border: 0 none;
+      padding-bottom: 0.5rem !important;
+
+      &:last-of-type {
+        padding-right: 0 !important;
+      }
+    }
+  }
+}
+
+// Custom styling for this interface
+#Form_fileInsertForm .tab-pane .show #Form_fileInsertForm_Dimensions_Holder {
+  padding-right: 1rem !important;
+}
+
+/* stylelint-enable */

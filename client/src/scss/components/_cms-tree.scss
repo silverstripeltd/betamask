@@ -1,0 +1,57 @@
+.cms-tree {
+  .jstree-leaf a,
+  .jstree-open a,
+  .jstree-closed a {
+    color: $color-black;
+    padding: 0.5rem 1rem;
+    margin-right: 2rem;
+  }
+
+  .jstree-pageicon {
+    color: $color-black;
+
+    &::before {
+      display: inline-block;
+      font-size: 1.5rem;
+    }
+  }
+
+  .jstree-no-checkboxes {
+    color: $color-black;
+  }
+
+  .jstree-open .badge,
+  .jstree-closed .badge {
+    display: inline-block;
+    font-size: 1rem;
+    padding-top: 0.2rem;
+  }
+
+  .status-modified > a .jstree-pageicon::after {
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: $color-white;
+    border: 0.1rem solid $color-state-orange;
+    border-radius: 50%;
+    box-shadow: 0 .1rem .1rem 0 rgb(0 0 0 / 40%);
+  }
+
+  .status-addedtodraft > a .jstree-pageicon::after {
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: $color-state-orange;
+    border: 0.1rem solid $color-white;
+    border-radius: 50%;
+    box-shadow: 0 .1rem .1rem 0 rgb(0 0 0 / 40%);
+  }
+
+  .page-icon, a .jstree-pageicon {
+    width: 1.5rem;
+    height: 1.8rem;
+    margin-right: 0.6rem;
+  }
+
+  .jstree-pageicon.homepage::before {
+    content: '\e002';
+  }
+}

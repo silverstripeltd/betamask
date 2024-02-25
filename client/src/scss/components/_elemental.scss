@@ -1,0 +1,85 @@
+/**
+* Handles custom styles for all Elemental components.
+*/
+
+// Targets all components within the elemental blocks editor
+.element-editor {
+  &__element {
+    padding: 1.5rem 1.75rem 2.2rem;
+    transition: box-shadow 0.15s ease-in-out;
+    position: relative;
+  }
+
+  &-header__icon-container {
+    width: 2.4rem;
+    height: 2.4rem;
+    padding-top: 0.45rem;
+
+    i {
+      display: inline-block;
+      width: 2.4rem;
+      height: 2.4rem;
+
+      &::before {
+        font-size: 2.4rem;
+      }
+    }
+  }
+
+  &-header__title {
+    margin-left: 1.5rem;
+    font-size: $font-size-field-label;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-block-heading;
+    max-width: 42rem;
+  }
+
+  &-header__expand {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    margin-top: 0.4rem;
+    width: auto;
+
+    &::before {
+      font-size: 1.2rem;
+    }
+  }
+
+  &-header__actions {
+    margin-top: 0.2rem;
+  }
+
+  &-header__actions-toggle {
+    margin-right: 0;
+
+    &::before {
+      font-size: 1.6rem;
+    }
+  }
+
+  &-header__drag-handle {
+    width: 1.4rem;
+    height: 1.6rem;
+    left: 0.15rem;
+    top: calc(50% - 1.9rem);
+
+    i::before {
+      font-size: 1.4rem;
+      margin-right: 1rem;
+    }
+  }
+
+  &-summary {
+    margin-top: 0.1rem;
+    margin-left: 3.8rem;
+    min-height: auto;
+
+    &__content {
+      font-size: 1.3rem;
+      font-weight: $font-weight-regular;
+      line-height: $line-height-small;
+      max-width: 80rem;
+      margin-right: 8.5rem;
+    }
+  }
+}

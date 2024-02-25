@@ -1,0 +1,46 @@
+/**
+ * CMS content controls (split, preview and edit mode)
+ */
+.cms-content-controls {
+  background-color: $color-blue-100;
+  padding: 1.5rem 2rem;
+  /* stylelint-disable declaration-no-important */
+  height: 6.7rem !important;
+  max-height: unset;
+
+  /* State toggle button */
+  .state-name {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  /* Preview mode selector */
+  .preview-selector {
+    .chosen-single > span {
+      font-size: 1rem;
+      font-weight: $font-weight-medium;
+      line-height: 1.2;
+      color: $color-black;
+    }
+
+    .chosen-drop ul.chosen-results li {
+      font-size: $font-size-small;
+    }
+  }
+
+  .ui-tabs-anchor,
+  .btn-secondary {
+    color: $color-grey-900;
+
+    &:not(:disabled) {
+      &:hover,
+      &:focus,
+      &:active:focus,
+      &:active:hover {
+        background-color: $color-grey-100;
+        color: $color-grey-900;
+        box-shadow: none !important;
+      }
+    }
+  }
+}

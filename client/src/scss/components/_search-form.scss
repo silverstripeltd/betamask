@@ -1,0 +1,23 @@
+.search-form {
+
+  &__wrapper {
+    .form__field-holder {
+      .form-group {
+        // need to use !important because overriding another !important thing in cms-refresh :|
+        /* stylelint-disable declaration-no-important */
+        padding: 0 1.5rem 0 0 !important;
+      }
+    }
+  }
+
+  .form-group {
+    border-bottom: 0;
+    // need to use !important because overriding another !important thing in cms-refresh :|
+    padding: 0.75em 0 !important;
+  }
+
+  .cms-search-form {
+    padding-bottom: 1.5rem;
+  }
+
+}

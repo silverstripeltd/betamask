@@ -1,0 +1,15 @@
+/**
+ * Breadcrumbs
+ */
+.breadcrumbs-wrapper {
+  .crumb,
+  .sep {
+    font-size: $font-size-toolbar-breadcrumbs;
+    line-height: $line-height-toolbar-breadcrumbs;
+  }
+
+  .crumb.last {
+    font-size: $font-size-toolbar-heading;
+    line-height: $line-height-toolbar-heading;
+  }
+}

@@ -1,0 +1,22 @@
+.msg-banners {
+  position: fixed;
+  top: 0.4rem;
+  right: 0.5rem;
+  z-index: 999;
+
+  &--none {
+    display: none;
+  }
+
+  &__item {
+    //
+  }
+
+  &__content {
+    //
+  }
+
+  &__close {
+    //
+  }
+}

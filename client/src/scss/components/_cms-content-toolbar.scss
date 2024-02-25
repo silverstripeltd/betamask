@@ -1,0 +1,90 @@
+/* stylelint-disable declaration-no-important */
+.cms-content-toolbar {
+  background-color: $color-white;
+  padding: 2rem 2rem 1.2rem;
+
+  .cms-content-addpage-button {
+    font-size: 1.2rem;
+    font-weight: $font-weight-medium;
+    line-height: 1;
+    padding: 0.8rem 1rem;
+
+    &::before {
+      display: inline-block;
+      margin-right: 0.6rem;
+      line-height: 1;
+      font-size: 1.6rem;
+    }
+  }
+
+  .cms-content-batchactions-button {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding: 0.8rem 1rem;
+    color: $color-grey-900;
+    box-shadow: none !important;
+
+    &::before {
+      color: $color-black;
+      display: inline-block;
+      font-size: 1.8rem;
+      line-height: 1;
+      margin-right: 0.2rem;
+    }
+
+    &:not(:disabled) {
+      &:hover,
+      &:focus,
+      &:active,
+      &:active:focus,
+      &:active:hover {
+        background-color: $color-grey-200;
+        color: $color-grey-900;
+        box-shadow: none !important;
+      }
+    }
+  }
+
+  .page-view-link {
+    padding: 1rem;
+
+    &::before {
+      color: $color-grey-900;
+      font-size: 1.465rem;
+    }
+  }
+
+  .cms-actions-buttons-row {
+    align-items: center;
+  }
+}
+
+.cms-content {
+  .btn-toolbar {
+    margin-left: 0 !important;
+  }
+
+  .btn-toolbar,
+  .south {
+    margin-right: 0.5rem;
+
+    .share-draft-content__container {
+      margin-right: 0.5rem;
+    }
+
+    .chosen-single {
+      &:not(:disabled) {
+        &:hover,
+        &:focus,
+        &:active,
+        &:active:focus,
+        &:active:hover {
+          background-color: $color-grey-100;
+          color: $color-grey-900;
+          box-shadow: none !important;
+        }
+      }
+    }
+  }
+}

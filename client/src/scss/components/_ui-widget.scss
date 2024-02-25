@@ -1,0 +1,28 @@
+/**
+ * UI widget
+ */
+.ui-widget {
+  &,
+  input,
+  select,
+  textarea {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    font-weight: $font-weight-regular;
+  }
+
+  button {
+    font-family: $font-family-base;
+    font-size: $font-size-button;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-button;
+  }
+}
+
+.ui-widget-content {
+  color: $color-black;
+
+  a.URL-link {
+    color: $color-blue-bright;
+  }
+}

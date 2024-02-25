@@ -1,0 +1,149 @@
+.cms-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  width: 100%;
+  box-shadow: 0 0.3rem 0.9rem 0 $shadow-top-bar;
+  padding: 0 2rem;
+  height: 6rem;
+  z-index: 999;
+  font-family: $font-family-sans-serif;
+  border-bottom: .1rem solid $color-grey-400;
+
+  &__version {
+    background: $color-blue-bright;
+    color: $color-white;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  &__brand-version {
+    padding: 1.2rem 1rem 0.6rem;
+  }
+
+  &__brand {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    &-divider {
+      width: .1rem;
+      height: 2.6rem;
+      background: $color-grey-500;
+    }
+
+    &-name {
+      color: $color-black;
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+
+    @include media-breakpoint-down(md) {
+      gap: 2rem;
+
+      &-name,
+      &-divider {
+        display: none;
+        visibility: hidden;
+      }
+    }
+
+    &-logo {
+      z-index: 99;
+
+      @include media-breakpoint-down(md) {
+        .arrow {
+          display: block;
+          visibility: visible;
+        }
+      }
+
+    }
+  }
+
+  &__env {
+    --color: #{$color-env-dev}; // --dev colour
+
+    background: var(--color, #{$color-env-dev});
+    color: $color-black;
+    padding: 0.4315rem 0.863rem;
+    border-radius: 0.2rem;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 0;
+    font-size: 1rem;
+    font-weight: $font-weight-regular;
+
+    &--test {
+      --color: #{$color-env-test};
+    }
+
+    &--uat {
+      --color: #{$color-env-uat};
+    }
+
+    &--prod {
+      --color: #{$color-env-prod};
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    font-size: 1.4rem;
+
+    &-item {
+      display: flex;
+      align-items: center;
+    }
+
+    @include media-breakpoint-down(md) {
+      gap: 1rem;
+    }
+  }
+
+  .font-icon-torso,
+  .font-icon-white-question,
+  .font-icon-logout {
+    display: block;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-right: 1rem;
+    font-size: 2.2rem;
+    color: $color-blue-royal;
+
+    &::before {
+      display: block;
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-right: 0;
+    }
+  }
+
+  &__mobile-toggle {
+    margin-right: 3.5rem;
+
+    .cms-mobile-menu-toggle-wrapper {
+      display: block;
+      visibility: visible;
+
+      .cms-mobile-menu-toggle {
+        width: 6rem;
+        height: 6rem;
+        background: $color-blue-royal;
+      }
+    }
+    @include media-breakpoint-up(md) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+}

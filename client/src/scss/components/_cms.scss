@@ -1,0 +1,18 @@
+// override the CMS container to include the top bar
+.cms-container {
+  flex-wrap: wrap;
+  height: calc(100% - 6rem);
+}
+
+body.cms {
+  flex-wrap: wrap;
+}
+
+.cms-mobile-menu-toggle-wrapper {
+  display: none;
+  visibility: hidden;
+}
+
+.breadcrumbs-wrapper {
+  margin-left: 0;
+}

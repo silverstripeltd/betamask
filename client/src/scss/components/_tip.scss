@@ -1,0 +1,10 @@
+/**
+ * Tool tip
+ */
+.tip {
+  &--title {
+    .form-group & {
+      margin-right: 0;
+    }
+  }
+}

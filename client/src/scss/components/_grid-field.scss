@@ -1,0 +1,54 @@
+.grid-field {
+  &__paginator {
+
+    &__controls {
+      padding-top: 1rem;
+    }
+
+    .btn[class*='font-icon-'] {
+      display: inline-block;
+      padding: 0.5rem;
+    }
+
+    .pagination-page-number {
+      font-size: 1.3rem;
+
+      .text {
+        font-size: 1.3rem;
+        padding: 0.5385rem 0;
+        margin: 0 1rem;
+        position: relative;
+        top: .1rem;
+      }
+    }
+
+    .ss-gridfield-pagination-action {
+      margin-bottom: .2rem;
+    }
+  }
+
+  &__paginator_numbers {
+    font-size: 1.3rem;
+    padding-top: 1.1rem;
+  }
+
+  &__table {
+    tr th.main span.non-sortable {
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__col-compact {
+    .btn[class*='font-icon-'] {
+      display: inline-block;
+      margin-top: -0.5rem;
+    }
+
+    .action-menu {
+      .btn[class*='font-icon-'] {
+        margin-top: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+/* -------------------------------------- */
+
+//      Compiled styles for the CMS       //
+
+/* -------------------------------------- */
+
+/* stylelint-disable import-notation */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+/* stylelint-enable import-notation */
+
+/* stylelint-disable declaration-property-unit-disallowed-list */
+html.cms-refresh {
+  font-size: 10px; // For easy conversion of px to rem, 18px = 1.8rem
+}
+/* stylelint-enable declaration-property-unit-disallowed-list */
+
+/* stylelint-disable no-invalid-position-at-import-rule */
+.cms-refresh {
+  @import 'base/*';
+  @import 'components/*';
+
+  // TEMP fix for PIKACHUS-52
+  .uf-field-editor .sticky-buttons {
+    position: unset;
+  }
+  // TEMP fix for PIKACHUS-52
+}
+/* stylelint-enable no-invalid-position-at-import-rule */
