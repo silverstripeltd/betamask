@@ -7,7 +7,7 @@ SilverStripe\Admin\LeftAndMain:
   extensions:
     - SilverStripe\Betamask\Extension\LeftAndMain
   admin_themes:
-    - 'betamask'
+    - 'silverstripeltd/betamask:/templates'
 
 ---
 Name: betamask_featureflag
