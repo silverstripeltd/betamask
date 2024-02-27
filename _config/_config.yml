@@ -19,5 +19,4 @@ SilverStripe\FeatureFlag\Extension\MemberConfiguration:
     FeatureFlag_Betamask:
       Label: 'Betamask'
       Help: |
-        We should put a description here about what this feature is lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Proin efficitur condimentum mi, in porta velit faucibus non.
+        Enabling this feature will change the CMS UI to preview the new look for Silverstripe CMS 6.
