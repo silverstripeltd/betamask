@@ -16,7 +16,7 @@ After: featureflag
 # Features enable/disable by each CMS user
 SilverStripe\FeatureFlag\Extension\MemberConfiguration:
   features:
-    FeatureFlag_Silverplasty:
+    FeatureFlag_Betamask:
       Label: 'Betamask'
       Help: |
         We should put a description here about what this feature is lorem ipsum dolor sit amet, consectetur
