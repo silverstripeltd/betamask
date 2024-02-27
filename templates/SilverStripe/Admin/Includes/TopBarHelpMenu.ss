@@ -11,7 +11,7 @@
        <ul class="cms-popup-menu">
             <li class="cms-popup-menu__item">
                  <div class="cms-top-bar__brand-version">
-                    <img src="$resourceURL('themes/betamask/dist/images/silverstripe-logo-full.svg')" alt="Silverstripe CMS" />
+                    <img src="$resourceURL('silverstripeltd/betamask: client/dist/images/silverstripe-logo-full.svg')" alt="Silverstripe CMS" />
                     <span class="cms-top-bar__version">
                         <% if $CMSVersionNumber %>
                             v{$CMSVersionNumber}

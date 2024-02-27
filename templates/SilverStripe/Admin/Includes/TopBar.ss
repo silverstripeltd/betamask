@@ -5,7 +5,7 @@
         </div>
         <div class="cms-top-bar__brand-logo">
             <a href="$AdminURL('pages')">
-                <img class="cms-image" src="$resourceURL('themes/betamask/dist/images/silverstripe-logo.svg')" alt="Silverstripe CMS" />
+                <img class="cms-image" src="$resourceURL('silverstripeltd/betamask: client/dist/images/silverstripe-logo.svg')" alt="Silverstripe CMS" />
             </a>
         </div>
 
