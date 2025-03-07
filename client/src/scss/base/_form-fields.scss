@@ -58,9 +58,16 @@
   padding: 1rem 1.5rem;
 }
 
-.field select {
-  padding: 0.86rem 1.2rem;
+.field {
+  select {
+    padding: 0.86rem 1.2rem;
+  }
+
+  .checkbox .form__field-holder {
+    padding-left: 15px !important;
+  }
 }
+
 
 .form-group .chosen-container-single {
   .chosen-single {
@@ -106,7 +113,8 @@
       line-height: 1.4 !important;
       padding: 0.6rem 1.2rem;
 
-      &.highlighted {
+      &.highlighted,
+      &.result-selected {
         background: $color-blue-pale;
         color: $color-black !important;
       }
