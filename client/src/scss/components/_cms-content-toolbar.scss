@@ -49,13 +49,13 @@
   .view-controls {
     &--treeview {
       .font-icon-tree {
-        display: none;
+        display: none !important;
       }
     }
 
     &--listview {
       .font-icon-list {
-        display: none;
+        display: none !important;
       }
     }
   }
