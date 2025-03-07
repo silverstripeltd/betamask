@@ -4,4 +4,13 @@
 .toast {
   font-size: $font-size-small;
   line-height: $line-height-small;
+
+  &__body {
+    align-items: center;
+    color: $color-black;
+  }
+
+  &__content {
+    font-size: 1.3rem;
+  }
 }

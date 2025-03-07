@@ -1,7 +1,8 @@
+/* stylelint-disable declaration-no-important */
 .preview-selector {
   .chosen-drop {
     .chosen-results {
-      .result-selected:before,
+      .result-selected::before,
       .result-selected {
         background: $color-blue-pale !important;
         color: #43536d !important;
