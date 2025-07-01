@@ -1,0 +1,20 @@
+.bulk-actions {
+  padding: 1.5rem 2rem;
+  background: $color-white;
+  align-items: center;
+  height: unset !important;
+
+  &-counter {
+    background-color: $color-blue-bright !important;
+  }
+
+  &-select-all button {
+    color: $color-blue-bright !important;
+    flex-direction: row-reverse !important;
+
+    &::before {
+      margin-right: 0rem !important;
+      margin-left: 0.5rem !important;
+    }
+  }
+}

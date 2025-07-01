@@ -5,6 +5,10 @@
   padding: 2.5rem 0 !important;
   border-bottom: 0.1rem solid $color-grey-400;
 
+  .editor__details & {
+    padding: 0 !important;
+  }
+
   &:first-child {
     padding-top: 0 !important;
   }
@@ -17,6 +21,8 @@
     font-weight: $font-weight-medium;
     margin: 0 0 .8rem !important;
     padding: 0 !important;
+    font-size: 1em;
+    color: $color-black;
   }
 
   .form__field-holder {
@@ -64,6 +70,14 @@
   .form-check-input {
     margin-top: 0.4rem;
     margin-left: -1.8rem;
+  }
+}
+
+.editor__details {
+  .form-group {
+    padding: 0 !important;
+    padding-bottom: 2rem !important;
+    border-bottom: 0 !important;
   }
 }
 

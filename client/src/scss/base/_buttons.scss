@@ -9,7 +9,7 @@
   font-weight: $font-weight-medium;
   line-height: $line-height-button;
 
-  &[class*='font-icon-']:not(.tip) {
+  &[class*='font-icon-']:not(.tip):not(.editor-header__back-button) {
     align-items: center;
     border-radius: 0.4rem;
     display: flex;

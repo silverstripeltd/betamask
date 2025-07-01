@@ -1,0 +1,16 @@
+.dropdown {
+  &-menu {
+    font-size: 1.3rem !important;
+  }
+
+  &-item {
+    &:hover {
+      background-color: $color-blue-pale;
+    }
+
+    &[class*=font-icon-]:before {
+      font-size: 1.6rem !important;
+    }
+  }
+}
+

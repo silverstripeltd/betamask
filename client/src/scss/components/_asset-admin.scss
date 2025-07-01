@@ -1,0 +1,41 @@
+/* stylelint-disable declaration-no-important */
+.asset-admin {
+  background: $color-white;
+  border-bottom: 1px solid #DCDEE0;
+
+  .toolbar--north {
+    background: $color-white;
+  }
+
+  .popover-field .popover-body .btn:hover {
+    background-color: $color-blue-pale !important;
+  }
+}
+
+#Editor .tabset {
+  .nav-tabs {
+    gap: 15px;
+    margin-top: 20px;
+  }
+}
+
+.editor {
+  &__details {
+    background-color: $color-white;
+
+    .nav-tabs .tab-content .form-group {
+      padding: 0 !important;
+    }
+  }
+
+  &__specs {
+    font-size: 1.2rem;
+    color: $color-grey-900;
+  }
+
+  &__status-flag {
+    background-color: $color-orange-light;
+    color: $color-orange;
+    padding: 0.3rem 0.5rem !important;
+  }
+}

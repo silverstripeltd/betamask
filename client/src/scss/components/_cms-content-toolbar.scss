@@ -46,6 +46,20 @@
     }
   }
 
+  .view-controls {
+    &--treeview {
+      .font-icon-tree {
+        display: none !important;
+      }
+    }
+
+    &--listview {
+      .font-icon-list {
+        display: none !important;
+      }
+    }
+  }
+
   .page-view-link {
     padding: 1rem;
 
