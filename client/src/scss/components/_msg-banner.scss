@@ -17,6 +17,11 @@
   }
 
   &__close {
-    //
+    // Override Bootstrap close button styles as silverstripe/admin updated bootstrap to v5.
+    --bs-btn-close-bg: none;
+
+    width: auto;
+    height: auto;
+    font-weight: 700;
   }
 }

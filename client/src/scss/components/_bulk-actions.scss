@@ -1,3 +1,4 @@
+/* stylelint-disable declaration-no-important */
 .bulk-actions {
   padding: 1.5rem 2rem;
   background: $color-white;
@@ -13,8 +14,9 @@
     flex-direction: row-reverse !important;
 
     &::before {
-      margin-right: 0rem !important;
+      margin-right: 0 !important;
       margin-left: 0.5rem !important;
     }
   }
 }
+/* stylelint-enable declaration-no-important */

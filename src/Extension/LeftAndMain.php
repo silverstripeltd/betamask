@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace SilverStripe\Betamask\Extension;
 
@@ -11,16 +11,16 @@ use SilverStripe\View\TemplateGlobalProvider;
 class LeftAndMain extends Extension implements TemplateGlobalProvider
 {
 
-    private const ENV_DEV = 'dev';
-    private const ENV_UAT = 'uat';
-    private const ENV_TEST = 'test';
+    private const string ENV_DEV = 'dev';
+    private const string ENV_UAT = 'uat';
+    private const string ENV_TEST = 'test';
 
     private static array $environments = [
         self::ENV_DEV => 'dev',
         'live' => 'prod',
     ];
 
-    public function init(): void
+    public function onInit(): void
     {
         FeatureFlag::withBetamask(
             static function (): void {

@@ -70,6 +70,15 @@
   .form-check-input {
     margin-top: 0.4rem;
     margin-left: -1.8rem;
+
+    // Override Bootstrap checkbox styles as silverstripe/admin updated bootstrap to v5.
+    background-color: unset;
+    border-color: unset;
+    appearance: auto;
+    -moz-appearance: auto;
+    -webkit-appearance: auto;
+
+    --bs-form-check-bg-image: none;
   }
 }
 

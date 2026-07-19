@@ -1,3 +1,4 @@
+/* stylelint-disable declaration-no-important */
 .dropdown {
   &-menu {
     font-size: 1.3rem !important;
@@ -8,9 +9,10 @@
       background-color: $color-blue-pale;
     }
 
-    &[class*=font-icon-]:before {
+    &[class*=font-icon-]::before {
       font-size: 1.6rem !important;
     }
   }
 }
+/* stylelint-enable declaration-no-important */
 

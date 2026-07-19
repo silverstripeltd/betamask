@@ -12,12 +12,14 @@
   }
 }
 
+/* stylelint-disable selector-id-pattern, selector-max-id -- #Editor is a fixed DOM id rendered by the CMS and cannot be renamed */
 #Editor .tabset {
   .nav-tabs {
     gap: 15px;
     margin-top: 20px;
   }
 }
+/* stylelint-enable selector-id-pattern, selector-max-id */
 
 .editor {
   &__details {
