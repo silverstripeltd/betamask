@@ -10,6 +10,15 @@ SilverStripe\Admin\LeftAndMain:
     - 'silverstripeltd/betamask:/templates'
 
 ---
+Name: betamask_profile
+---
+# Force a full CMS reload when the Betamask theme toggle changes on profile save,
+# so the theme assets (loaded only at LeftAndMain init) take effect immediately.
+SilverStripe\Forms\FormRequestHandler:
+  extensions:
+    - SilverStripe\Betamask\Extension\ProfileFormReload
+
+---
 Name: betamask_featureflag
 After: featureflag
 ---
