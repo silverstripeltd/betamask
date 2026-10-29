@@ -1,27 +1,57 @@
+// Feature messages sit at the top of the CMS main column, above the panel
+// content, and push it down rather than covering its tabs and actions.
+$msg-banner-bg: #D1E7CE;
+$msg-banner-color: #292B2E;
+
+.cms-container-skip-link-target:has(> .msg-banners) {
+  flex-direction: column;
+
+  // Admin gives some panels a percentage width (by ID, e.g. the page tree)
+  // that only flex-grow overrides in its row layout. min-width keeps them
+  // full width in the column without out-ranking those selectors.
+  > .cms-content {
+    min-width: 100%;
+    min-height: 0;
+  }
+}
+
 .msg-banners {
-  position: fixed;
-  top: 0.4rem;
-  right: 0.5rem;
-  z-index: 999;
+  flex: 0 0 auto;
 
   &--none {
     display: none;
   }
 
   &__item {
-    //
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 1rem 0;
+    padding: 0.875rem 1rem 0.875rem 1.25rem;
+    border-radius: 2px;
+    background: $msg-banner-bg;
+    color: $msg-banner-color;
+    font-size: 1rem;
+    line-height: 1.4;
   }
 
   &__content {
-    //
+    flex: 1 1 auto;
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
   }
 
   &__close {
-    // Override Bootstrap close button styles as silverstripe/admin updated bootstrap to v5.
-    --bs-btn-close-bg: none;
-
-    width: auto;
-    height: auto;
-    font-weight: 700;
+    flex: 0 0 auto;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: inherit;
+    font-size: 1.75rem;
+    line-height: 1;
+    cursor: pointer;
   }
 }

@@ -1,6 +1,8 @@
 <%-- CMS layout: silverstripe/admin's own template plus the Betamask top bar and feature
      flag messages. CMS 6 measures the <main> column to decide whether the split preview
-     fits, so it and the skip link must stay in sync with admin. --%>
+     fits, so it and the skip link must stay in sync with admin. The messages sit at the
+     top of that column, outside the PJAX-swapped content, so a dismissed banner stays
+     gone while the user moves between sections. --%>
 <!DOCTYPE html>
 <html lang="$Locale.RFC1766">
     <head>
@@ -16,8 +18,6 @@
 
     <% if $FeatureFlag('Betamask') %>
         <% include SilverStripe\\Admin\\TopBar %>
-    <% else %>
-        <% include SilverStripe\\Admin\\FeatureFlag\\Messages %>
     <% end_if %>
 
     <a class="cms-container-skip-link"
@@ -30,7 +30,12 @@
         <main id="cms-container-skip-link-target"
              class="cms-container-skip-link-target flexbox-area-grow fill-height fill-width"
              tabindex="-1"
-        >$Content</main>
+        >
+            <% if not $FeatureFlag('Betamask') %>
+                <% include SilverStripe\\Admin\\FeatureFlag\\Messages %>
+            <% end_if %>
+            $Content
+        </main>
         $PreviewPanel
     </div>
 </body>

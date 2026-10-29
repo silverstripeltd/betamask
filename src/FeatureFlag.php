@@ -37,7 +37,7 @@ class FeatureFlag implements FeatureFlagInterface
     {
         return DBField::create_field(
             'HTMLText',
-            '<strong>New CMS design interface is now available!</strong> Turn this feature on in the your ' .
+            '<strong>New CMS design interface is now available!</strong> Turn this feature on in your ' .
             '<a href="/admin/myprofile/#Root_Features">profile area</a>.',
         );
     }

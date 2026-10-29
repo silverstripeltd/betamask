@@ -26,6 +26,6 @@ After: featureflag
 SilverStripe\FeatureFlag\Extension\MemberConfiguration:
   features:
     FeatureFlag_Betamask:
-      Label: 'Betamask'
+      Label: 'New UI preview'
       Help: |
-        Enabling this feature will change the CMS UI to preview the new look for Silverstripe CMS 6.
+        Enabling this feature will change the CMS UI to preview the new look for Silverstripe CMS 7 (UI currently in Beta).
