@@ -8,6 +8,9 @@ use SilverStripe\Dev\FunctionalTest;
 
 /**
  * The CMS layout keeps the main column CMS 6 measures to decide whether the split preview fits, and its skip link.
+ *
+ * phpcs:disable SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingNativeTypeHint
+ * SapphireTest::$usesDatabase is untyped, so redeclaring it with a native type is a fatal error.
  */
 class LeftAndMainLayoutTest extends FunctionalTest
 {
