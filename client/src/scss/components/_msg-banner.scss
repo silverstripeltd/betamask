@@ -2,6 +2,9 @@
 // content, and push it down rather than covering its tabs and actions.
 $msg-banner-bg: #D1E7CE;
 $msg-banner-color: #292B2E;
+$msg-banner-close-size: 2.5rem;
+$msg-banner-cross-length: 1.125rem;
+$msg-banner-cross-weight: 0.125rem;
 
 .cms-container-skip-link-target:has(> .msg-banners) {
   flex-direction: column;
@@ -27,7 +30,7 @@ $msg-banner-color: #292B2E;
     align-items: center;
     gap: 1rem;
     margin: 1rem 1rem 0;
-    padding: 0.875rem 1rem 0.875rem 1.25rem;
+    padding: 0.5rem 0.125rem 0.5rem 1.25rem;
     border-radius: 2px;
     background: $msg-banner-bg;
     color: $msg-banner-color;
@@ -44,14 +47,48 @@ $msg-banner-color: #292B2E;
     }
   }
 
+  // A round button with the cross drawn by its two pseudo-elements, so the
+  // strokes stay crisp and centred at any zoom, unlike a "×" text glyph.
   &__close {
+    position: relative;
     flex: 0 0 auto;
+    width: $msg-banner-close-size;
+    height: $msg-banner-close-size;
     padding: 0;
     border: 0;
-    background: none;
+    border-radius: 50%;
+    background: transparent;
     color: inherit;
-    font-size: 1.75rem;
-    line-height: 1;
     cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: $msg-banner-cross-length;
+      height: $msg-banner-cross-weight;
+      border-radius: $msg-banner-cross-weight;
+      background: currentcolor;
+      content: '';
+    }
+
+    &::before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    &:hover {
+      background: rgba($msg-banner-color, 0.1);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $msg-banner-color;
+      outline-offset: 2px;
+    }
   }
 }
