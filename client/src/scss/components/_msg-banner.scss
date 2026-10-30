@@ -2,6 +2,8 @@
 // content, and push it down rather than covering its tabs and actions.
 $msg-banner-bg: #D1E7CE;
 $msg-banner-color: #292B2E;
+// Matches the CMS content header (.cms-content-header) the banner sits on.
+$msg-banner-surround: #F4F6F8;
 $msg-banner-close-size: 2.5rem;
 $msg-banner-cross-length: 1.125rem;
 $msg-banner-cross-weight: 0.125rem;
@@ -20,6 +22,8 @@ $msg-banner-cross-weight: 0.125rem;
 
 .msg-banners {
   flex: 0 0 auto;
+  padding: 1rem 1rem 0;
+  background: $msg-banner-surround;
 
   &--none {
     display: none;
@@ -29,7 +33,7 @@ $msg-banner-cross-weight: 0.125rem;
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin: 1rem 1rem 0;
+    margin: 0;
     padding: 0.5rem 0.5rem 0.5rem 1.25rem;
     border-radius: 2px;
     background: $msg-banner-bg;
